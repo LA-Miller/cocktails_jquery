@@ -4,13 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cocktail Cart</title>
+    <style>
+        .drink_pic {
+            width: 200px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        border: 5px solid green;
+      }
+        .box {
+        flex: 0 0 300px;
+        height: 120px;
+        background-color: #990000;
+        margin: 5px;
+        font-size: xx-large;
+        color: rgb(239, 208, 162);
+        box-sizing: border-box;
+        padding: 2px;
+        margin: 2px;
+        font-size: medium;
+      }
+      .name {
+        float: right;
+        margin-right: 20px;
+        font-size: large;
+        font-weight: bold;
+        width: 50%;
+      }
+      .description {
+        float: right;
+        font-size: medium;
+        width: 100%;
+      }
+    </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="cocktail_cart.js"></script>
 </head>
 <body>
     <h1>Cocktail List</h1>
 
-    <p></p>
+    <p>Click for calories, mouse over for recipe.</p>
+
+    <div class="wrapper"></div>
     
 </body>
 </html>
